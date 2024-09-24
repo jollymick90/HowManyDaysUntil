@@ -1,4 +1,7 @@
-import { words, allowed } from './words.server';
+import {
+  allowed,
+  words,
+} from './words.server';
 
 export class Game {
 	index: number;
@@ -18,7 +21,7 @@ export class Game {
 			this.answers = answers ? answers.split(' ') : [];
 		} else {
 			this.index = Math.floor(Math.random() * words.length);
-			this.guesses = ['', '', '', '', '', ''];
+			this.guesses = ['', '', '', '', '', ''];	
 			this.answers = [];
 		}
 
